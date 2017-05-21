@@ -1,0 +1,13 @@
+<ion-view view-title = "Movie">
+	<ion-content class = "padding">
+		<ion-list>
+			<ion-item ng-repeat="m in movie_list" class="item-thumbnail-left" href="#/tab/movie/{{m.Id}}">
+				<img ng-src="{{m.Image}}"/>
+				<h2>{{m.Title}}</h2>
+				<p>{{m.Detail}}</p>
+
+			
+			</ion-item>
+		</ion-list>
+	</ion-content>
+</ion-view>
